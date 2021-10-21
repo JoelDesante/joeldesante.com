@@ -4,4 +4,8 @@ article > .article-head { margin-bottom: 25px; }
 
 article > .article-head > h1 { font-size: 2em; }
 
+article p { margin-top: 15px; }
+
+article hr { width: 80%; }
+
 /*# sourceMappingURL=post.css.map */
