@@ -6,7 +6,7 @@ header { height: 100px; font-family: 'Paytone One', sans-serif; color: white; po
 
 #text-mark a { color: #FFFFFF; text-decoration: none; }
 
-#text-mark a:hover { color: red; }
+#text-mark a:hover { color: #FF0D86; }
 
 nav { display: flex; justify-content: space-around; align-items: center; padding-top: 25px; font-size: 1em; }
 
@@ -17,6 +17,8 @@ nav #left > #links > ul { margin: 0px; }
 nav #left > #links > ul > li { display: inline-block; list-style: none; }
 
 nav #left > #links > ul > li a { color: #FFFFFF; font-family: sans-serif; padding: 0em 0.5em; font-size: 0.85em; }
+
+nav #left > #links > ul > li a:hover { color: #FF0D86; }
 
 nav #social-links > a { padding: 0px 10px; color: white; text-decoration: none; }
 
