@@ -1,0 +1,25 @@
+header { height: 100px; font-family: 'Paytone One', sans-serif; color: white; position: relative; }
+
+#curve-bg { object-fit: cover; object-position: top; position: absolute; top: 0px; width: 100vw; height: 100%; z-index: -1; background-color: #000000; background-image: url("/assets/images/stars.gif"); background-repeat: repeat; background-size: 400px; clip-path: ellipse(100% 55% at 40% 40%); }
+
+@media (prefers-reduced-motion) { #curve-bg { background-image: none; } }
+
+#text-mark a { color: #FFFFFF; text-decoration: none; }
+
+#text-mark a:hover { color: red; }
+
+nav { display: flex; justify-content: space-around; align-items: center; padding-top: 25px; font-size: 1em; }
+
+nav #left { display: flex; align-items: center; }
+
+nav #left > #links > ul { margin: 0px; }
+
+nav #left > #links > ul > li { display: inline-block; list-style: none; }
+
+nav #left > #links > ul > li a { color: #FFFFFF; font-family: sans-serif; padding: 0em 0.5em; font-size: 0.85em; }
+
+nav #social-links > a { padding: 0px 10px; color: white; text-decoration: none; }
+
+nav #social-links > a:hover { color: #FF0D86; }
+
+/*# sourceMappingURL=navigation.css.map */

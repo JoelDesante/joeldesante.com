@@ -23,15 +23,19 @@ email: joeldesante@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my website.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://joeldesante.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: joeldesante
 github_username:  joeldesante
+navigation_slug: joeldesante
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
+sass:
+  sass_dir: _sass
+  style: compact
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
