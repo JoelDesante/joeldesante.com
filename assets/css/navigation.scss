@@ -1,13 +1,6 @@
 ---
 ---
 
-header {
-	height: 100px;
-	font-family: 'Paytone One', sans-serif; 
-	color: white;
-	position: relative;
-}
-
 #curve-bg {
 	object-fit: cover;
 	object-position: top;
@@ -20,7 +13,7 @@ header {
 	background-color: #000000;
 	background-image: url("/assets/images/stars.gif");
 	background-repeat: repeat;
-	background-size: 400px;
+	background-size: 450px;
 
 	clip-path: ellipse(100% 55% at 40% 40%);
 }
@@ -31,56 +24,82 @@ header {
 	}
 }
 
-#text-mark {
-	& a {
-		color: #FFFFFF;
-		text-decoration: none;
+header {
+	font-family: "Paytone One", sans-serif;
+	color: #ffffff;
+	height: 125px;
 
-		&:hover {
-			color: #FF0D86;
-		}
-	}
-}
+	display: grid;
+	position: relative;
 
-nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	grid-template-columns: 1fr 60vw 1fr;
+	grid-template-rows: 50px auto;
 	padding-top: 25px;
-	font-size: 1em;
-}
 
-nav #left {
-	display: flex;
-	align-items: center;
-}
+	& nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		align-items: center;
 
-nav #left > #links > ul {
-	margin: 0px;
-}
+		font-size: 1em;
 
-nav #left > #links > ul > li {
-	display: inline-block;
-	list-style: none;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
 
-	& a {
-		color: #FFFFFF;
-		font-family: sans-serif;
-		padding: 0em 0.5em;
-		font-size: 0.85em;
+		& a {
+			color: #ffffff;
 
-		&:hover {
-			color: #FF0D86;
+			&:hover {
+				color: #ff0d86;
+			}
+		}
+
+		& #left {
+			display: flex;
+			align-items: center;
+
+			#text-mark {
+				& a {
+					text-decoration: none;
+				}
+			}
+
+			& #links ul li {
+				margin: 0px;
+				display: inline-block;
+				list-style: none;
+
+				& a {
+					font-family: sans-serif;
+					padding: 0em 0.5em;
+					font-size: 0.95em;
+				}
+			}
+		}
+
+		& #social-links {
+
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			& a {
+				padding: 0px 10px;
+				text-decoration: none;
+			}
 		}
 	}
 }
 
-nav #social-links > a {
-	padding: 0px 10px;
-	color: white;
-	text-decoration: none;
-}
+@media only screen and (max-width: 800px) {
+	header {
+		color: #ffffff;
 
-nav #social-links > a:hover {
-	color: #FF0D86;
+		nav #social-links {
+			display: none;
+		}
+	}
 }

@@ -1,27 +1,27 @@
-header { height: 100px; font-family: 'Paytone One', sans-serif; color: white; position: relative; }
-
-#curve-bg { object-fit: cover; object-position: top; position: absolute; top: 0px; width: 100vw; height: 100%; z-index: -1; background-color: #000000; background-image: url("/assets/images/stars.gif"); background-repeat: repeat; background-size: 400px; clip-path: ellipse(100% 55% at 40% 40%); }
+#curve-bg { object-fit: cover; object-position: top; position: absolute; top: 0px; width: 100vw; height: 100%; z-index: -1; background-color: #000000; background-image: url("/assets/images/stars.gif"); background-repeat: repeat; background-size: 450px; clip-path: ellipse(100% 55% at 40% 40%); }
 
 @media (prefers-reduced-motion) { #curve-bg { background-image: none; } }
 
-#text-mark a { color: #FFFFFF; text-decoration: none; }
+header { font-family: "Paytone One", sans-serif; color: #ffffff; height: 125px; display: grid; position: relative; grid-template-columns: 1fr 60vw 1fr; grid-template-rows: 50px auto; padding-top: 25px; }
 
-#text-mark a:hover { color: #FF0D86; }
+header nav { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto; align-items: center; font-size: 1em; grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2; }
 
-nav { display: flex; justify-content: space-around; align-items: center; padding-top: 25px; font-size: 1em; }
+header nav a { color: #ffffff; }
 
-nav #left { display: flex; align-items: center; }
+header nav a:hover { color: #ff0d86; }
 
-nav #left > #links > ul { margin: 0px; }
+header nav #left { display: flex; align-items: center; }
 
-nav #left > #links > ul > li { display: inline-block; list-style: none; }
+header nav #left #text-mark a { text-decoration: none; }
 
-nav #left > #links > ul > li a { color: #FFFFFF; font-family: sans-serif; padding: 0em 0.5em; font-size: 0.85em; }
+header nav #left #links ul li { margin: 0px; display: inline-block; list-style: none; }
 
-nav #left > #links > ul > li a:hover { color: #FF0D86; }
+header nav #left #links ul li a { font-family: sans-serif; padding: 0em 0.5em; font-size: 0.95em; }
 
-nav #social-links > a { padding: 0px 10px; color: white; text-decoration: none; }
+header nav #social-links { display: flex; align-items: center; justify-content: flex-end; }
 
-nav #social-links > a:hover { color: #FF0D86; }
+header nav #social-links a { padding: 0px 10px; text-decoration: none; }
+
+@media only screen and (max-width: 800px) { header { color: #ffffff; } header nav #social-links { display: none; } }
 
 /*# sourceMappingURL=navigation.css.map */

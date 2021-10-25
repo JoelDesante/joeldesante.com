@@ -13,7 +13,7 @@
 	background-color: #000000;
 	background-image: url("/assets/images/stars.gif");
 	background-repeat: repeat;
-	background-size: 400px;
+	background-size: 450px;
 
 	clip-path: ellipse(100% 55% at 40% 40%);
 }
@@ -106,5 +106,22 @@ header {
 			font-size: 4em;
 			line-height: 1em;
 		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	header {
+
+		height: 450px;
+		padding-top: 25px;
+
+		nav #social-links {
+			display: none;
+		}
+
+		#header-content {
+			padding-top: 30px;
+		}
+
 	}
 }

@@ -1,7 +1,6 @@
 ---
 ---
 
-
 article {
 	font-family: sans-serif;
 	display: flex;
@@ -11,20 +10,31 @@ article {
 	margin-top: 40px;
 	margin-bottom: 40px;
 
+	.article-body {
+		& h1 {
+			margin-top: 2em;
+
+			&:first-child {
+				margin-top: 0px;
+			}
+		}
+
+		& p {
+			margin-top: 0.5em;
+		}
+	}
+
+	hr {
+		width: 80%;
+	}
+
 	& > .article-head {
 
 		margin-bottom: 25px;
 
 		& > h1 {
+			margin-top: 0px;
 			font-size: 2em;
 		}
-	}
-
-	p {
-		margin-top: 15px;
-	}
-
-	hr {
-		width: 80%;
 	}
 }

@@ -1,11 +1,15 @@
 article { font-family: sans-serif; display: flex; flex-flow: column; width: 65vw; margin: auto; margin-top: 40px; margin-bottom: 40px; }
 
-article > .article-head { margin-bottom: 25px; }
+article .article-body h1 { margin-top: 2em; }
 
-article > .article-head > h1 { font-size: 2em; }
+article .article-body h1:first-child { margin-top: 0px; }
 
-article p { margin-top: 15px; }
+article .article-body p { margin-top: 0.5em; }
 
 article hr { width: 80%; }
+
+article > .article-head { margin-bottom: 25px; }
+
+article > .article-head > h1 { margin-top: 0px; font-size: 2em; }
 
 /*# sourceMappingURL=post.css.map */
