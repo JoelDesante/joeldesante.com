@@ -1,0 +1,16 @@
+<section class="postgrid">
+	<section class="postgrid_header">
+		<h2>Posts</h2>
+	</section>
+	<section class="postgrid_posts">
+		{% for post in site.posts %}
+		<a href="{{ post.url }}">
+			<div class="postgrid_post">
+				<h3>{{ post.title }}</h3>
+				<small>{{ post.date | date: '%B %d, %Y' }}</small>
+				<p>{{ post.excerpt |  truncate: 120 }}</p>
+			</div>
+		</a>
+		{% endfor %}
+	</section>
+</section>

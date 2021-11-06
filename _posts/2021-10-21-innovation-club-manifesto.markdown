@@ -5,7 +5,7 @@ date:   2021-10-21 00:00:00 -0400
 categories: general
 ---
 
-*This document is intended to outline the basic mission and goals for The Innovation Club.*
+This document is intended to outline the basic mission and goals for The Innovation Club.
 
 ----
 

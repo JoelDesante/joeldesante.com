@@ -1,0 +1,17 @@
+.postgrid { display: grid; grid-template-columns: 1fr 60vw 1fr; grid-template-rows: 50px auto; padding-top: 25px; font-family: sans-serif; }
+
+.postgrid .postgrid_header { grid-row-start: 1; grid-row-end: 2; grid-column-start: 2; grid-column-end: 3; font-family: "Paytone One", sans-serif; }
+
+.postgrid .postgrid_posts { grid-row-start: 2; grid-row-end: 3; grid-column-start: 2; grid-column-end: 3; grid-gap: 10px; display: grid; align-items: center; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+.postgrid .postgrid_posts a { color: #000000; text-decoration: none; }
+
+.postgrid .postgrid_posts a .postgrid_post { padding: 10px; border-radius: 5px; height: 175px; }
+
+.postgrid .postgrid_posts a .postgrid_post h3 { font-family: "Paytone One", sans-serif; }
+
+.postgrid .postgrid_posts a .postgrid_post:hover { background: #DDDDDD; }
+
+.postgrid .postgrid_posts a .postgrid_post p { padding-top: 5px; }
+
+/*# sourceMappingURL=postgrid.css.map */
